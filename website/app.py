@@ -9,13 +9,13 @@ db = mysql.connector.connect(
     host="localhost",
     user="root",
     passwd="mysql",
-    database="database_pizza"
+    database="credit_social"
 )
 
 @app.route('/')
 def index():
     cursor = db.cursor()
-    cursor.execute("SELECT *")
+    cursor.execute("SELECT * from citoyen")
     data = cursor.fetchall()
     cursor.close()
     return render_template('index.html', data=data)
