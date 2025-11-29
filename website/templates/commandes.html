@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page de données</title>
+</head>
+<style>
+body {
+  background: linear-gradient(90deg,
+    #ff0000 0%,
+    #ff5200 14%,
+    #ffbf00 28%,
+    #3ad400 42%,
+    #0066ff 56%,
+    #5a2ca6 70%,
+    #b24bff 100%
+  );
+  color: #111;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+
+
+</style>
+<body>
+    <h1>Données de la Base</h1>
+    <label for="garnitures">garniture 1:</label>
+    <select name="garniture 1" id="garnitures">
+        <option value='NULL'></option>
+        {% for row in garnitures %}
+        <option value='{{ row }}'>{{ row }}</option>
+        {% endfor %}
+        </select>
+    <label for="garnitures 2">garniture 2:</label>
+    <select name="garniture 2" id="garnitures">
+        <option value='NULL'></option>
+        {% for row in garnitures %}
+        <option value='{{ row }}'>{{ row }}</option>
+        {% endfor %}
+        </select>
+    <label for="garnitures 3">garniture 3:</label>
+    <select name="garniture 3" id="garnitures">
+        <option value='NULL'></option>
+        {% for row in garnitures %}
+        <option value='{{ row }}'>{{ row }}</option>
+        {% endfor %}
+        </select>
+    <label for="garnitures 4">garniture 4:</label>
+    <select name="garniture 4" id="garnitures">
+        <option value='NULL'></option>
+        {% for row in garnitures %}
+        <option value='{{ row }}'>{{ row }}</option>
+        {% endfor %}
+        </select>
+    <label for="sauces">sauce:</label>
+    <select name="sauce" id="sauce">
+        <option value='select'>Selectionnez une sauce</option>
+        {% for row in sauces %}
+        <option value='{{ row }}'>{{ row }}</option>
+        {% endfor %}
+        </select>
+    <label for="croute">croute:</label>
+    <select name="croute" id="croute">
+        <option value='select'>Selectionnez une croute</option>
+        {% for row in croutes %}
+        <option value='{{ row }}'>{{ row }}</option>
+        {% endfor %}
+        </select>
+
+        
+</body>
+</html>

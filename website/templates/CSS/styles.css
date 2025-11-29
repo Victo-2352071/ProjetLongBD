@@ -1,0 +1,8 @@
+ body {
+        background-image: url('css-background.png');
+        /* Optional: Control image repetition, size, and position */
+        background-repeat: no-repeat; /* Prevents the image from tiling */
+        background-size: cover; /* Scales the image to cover the entire background */
+        background-position: center center; /* Centers the image */
+        background-attachment: fixed; /* Keeps the background image fixed during scrolling */
+    }
